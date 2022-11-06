@@ -1,5 +1,7 @@
 # Pomodoro Timer
 
+![Banner](./img/banner.jpeg)
+
 :tomato: Pomodoro timer built with React
 
 ## Features

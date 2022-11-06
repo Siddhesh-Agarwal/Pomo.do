@@ -1,15 +1,15 @@
 {
-  "short_name": "Pomodoro React",
+  "short_name": "Pomo.do",
   "name": "Pomodoro App made with React",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "./icon.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#D9534F",
+  "theme_color": "#472B6D",
   "background_color": "#ffffff"
 }

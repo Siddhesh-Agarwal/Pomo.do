@@ -15,12 +15,12 @@ const TaskList = () => {
     ];
 
     const [tasks, setTasks] = useState(
-        JSON.parse(window.localStorage.getItem('pomodoro-react-tasks')) || []
+        JSON.parse(window.localStorage.getItem('pomo.do-tasks')) || []
     );
     const [selectedStatus, setSelectedStatus] = useState(taskStatus[0]);
 
     useEffect(() => {
-        window.localStorage.setItem('pomodoro-react-tasks', JSON.stringify(tasks));
+        window.localStorage.setItem('pomo.do-tasks', JSON.stringify(tasks));
     }, [tasks]);
 
     function move(from, to) {

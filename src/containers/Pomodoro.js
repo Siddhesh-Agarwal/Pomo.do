@@ -18,11 +18,11 @@ class Pomodoro extends Component {
             interval: null,
             running: false,
             sound:
-                JSON.parse(window.localStorage.getItem('pomodoro-react-sound')) || true,
+                JSON.parse(window.localStorage.getItem('pomo.do-sound')) || true,
             theme:
-                JSON.parse(window.localStorage.getItem('pomodoro-react-theme')),
+                JSON.parse(window.localStorage.getItem('pomo.do-theme')),
             taskStatus:
-                JSON.parse(window.localStorage.getItem('pomodoro-react-taskStatus')) ||
+                JSON.parse(window.localStorage.getItem('pomo.do-taskStatus')) ||
                 null
         };
     }
@@ -124,7 +124,7 @@ class Pomodoro extends Component {
                 sound: !state.sound
             }),
             () => {
-                window.localStorage.setItem('pomodoro-react-sound', this.state.sound);
+                window.localStorage.setItem('pomo.do-sound', this.state.sound);
             }
         );
     };
@@ -136,7 +136,7 @@ class Pomodoro extends Component {
             }),
             () => {
                 window.localStorage.setItem(
-                    'pomodoro-react-taskStatus',
+                    'pomo.do-taskStatus',
                     this.state.taskStatus
                 );
             }
@@ -150,7 +150,7 @@ class Pomodoro extends Component {
             }),
             () => {
                 window.localStorage.setItem(
-                    'pomodoro-react-theme',
+                    'pomo.do-theme',
                     this.state.theme
                 );
             }

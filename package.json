@@ -1,8 +1,8 @@
 {
-  "name": "pomodoro-react",
+  "name": "pomo.do",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://luizbatanero.github.io/pomodoro-react",
+  "homepage": "https://siddhesh-agarwal.github.io/pomo.do",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
     "gh-pages": "^2.2.0",
