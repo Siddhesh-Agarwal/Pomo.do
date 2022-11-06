@@ -1,0 +1,31 @@
+.ToggleTheme {
+    /* position: absolute; */
+    /* top: 24px; */
+    /* right: 100px; */
+    cursor: pointer;
+    margin-inline: 0.5em;
+    background-color: transparent;
+}
+
+.ToggleTheme>button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.ToggleTheme i {
+    font-size: 24px;
+    outline: 0;
+    cursor: pointer;
+    padding: 0;
+    text-align: left;
+    color: #000;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .ToggleTheme i {
+        color: #fff;
+    }
+}

@@ -1,0 +1,96 @@
+.Shortcuts {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+@media screen and (max-width: 640px) {
+    .Shortcuts {
+        display: none;
+    }
+}
+
+.Shortcuts i {
+    font-size: 24px;
+    transition: all .3s;
+}
+
+.Shortcuts:hover .Shortcuts-box {
+    opacity: 1;
+    visibility: visible;
+}
+
+.Shortcuts .Shortcuts-box {
+    position: absolute;
+    top: 34px;
+    right: 0;
+    width: 300px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .07);
+    padding: 25px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s;
+}
+
+.Shortcuts .Shortcut {
+    display: flex;
+    border-bottom: 1px solid #ef00ef;
+    padding: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+
+.Shortcut:hover {
+    background-color: #efefef;
+}
+
+.Shortcuts .Shortcut div {
+    white-space: nowrap;
+}
+
+.Shortcuts .Shortcut:first-child {
+    padding-top: 0;
+}
+
+.Shortcuts .Shortcut:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.Shortcuts .Shortcut kbd {
+    display: inline-block;
+    font-family: monospace;
+    background-color: #e7e7e7;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .1), inset 0 0 0 1px #fff;
+    color: #333;
+    font-size: 11px;
+    margin: 0 .15em;
+    padding: .25em .7em;
+    white-space: nowrap;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .Shortcuts .Shortcuts-box {
+        background: #000;
+        border-color: #555;
+        box-shadow: none;
+    }
+
+    .Shortcuts .Shortcut {
+        color: #ccc;
+    }
+
+    .Shortcuts .Shortcut kbd {
+        background-color: #333;
+        border-color: #555;
+        color: #ccc;
+        box-shadow: none;
+    }
+}

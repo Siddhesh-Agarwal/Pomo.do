@@ -1,0 +1,75 @@
+.Tasks {
+    width: 400px;
+    max-height: 270px;
+    overflow-y: auto;
+}
+
+.Task {
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    color: #333;
+    cursor: grab;
+}
+
+.Tasks .Tasks-box {
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+    transition: opacity 0.3s;
+}
+
+.Task input {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    border: none;
+    outline: none;
+}
+
+.Task span {
+    display: inline-block;
+    font-family: monospace;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 0 0 1px #fff;
+    color: #333;
+    font-size: 11px;
+    margin: 0 0.15em;
+    padding: 0.25em 0.7em;
+    white-space: nowrap;
+    width: 70px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .Task {
+        background: #222;
+        color: #fff;
+        border-bottom: 1px solid #555;
+    }
+
+    .Tasks .Tasks-box {
+        background: #222;
+        border: 1px solid #555;
+        box-shadow: none;
+    }
+
+    .Task span {
+        background-color: #222;
+        border-color: #555;
+        color: #f0f0f0;
+        box-shadow: none;
+    }
+}
