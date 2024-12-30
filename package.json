@@ -6,7 +6,7 @@
   "dependencies": {
     "@babel/core": "^7.25.8",
     "@babel/plugin-syntax-flow": "^7.26.0",
-    "@babel/plugin-transform-react-jsx": "^7.14.9",
+    "@babel/plugin-transform-react-jsx": "^7.25.9",
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "gh-pages": "^5.0.0",
     "immer": "^10.1.1",
